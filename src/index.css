@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  background:black;
+  color:white;
+  font-family:'Poppins',sans-serif;
+  overflow-x:hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* SplitType Fix */
+.word{
+  display:inline-block;
+  white-space:pre;
+  will-change:transform;
+}
+
+
+
+.word{
+  display:inline-block;
+  white-space:pre;
+  will-change:transform;
+}
+
+.hero-title{
+  will-change:transform;
+}
+
+img{
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+button{
+  cursor:pointer;
+}
+
+.panel {
+  will-change: transform, opacity;
+}
+
+.film-section {
+  position: relative;
+  will-change: transform, opacity;
+}
+
+.film-content {
+  position: relative;
+  z-index: 2;
+}
+
+.ambient-glow {
+  pointer-events: none;
+  z-index: 0;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.gallery {
+  overscroll-behavior: none;
+}
+
+.gallery-panel {
+  flex-shrink: 0;
+}
+
+.gallery-image {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
